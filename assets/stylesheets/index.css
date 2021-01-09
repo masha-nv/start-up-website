@@ -43,6 +43,10 @@ section {
   padding: 100px 80px;
 }
 
+section:not(.hero):nth-child(even) {
+  background-color: #f5f5f5;
+}
+
 .grid {
   width: 100%;
   display: flex;
@@ -171,4 +175,21 @@ header nav li {
 }
 .destinations .grid li.large {
   flex-basis: 70%;
+}
+
+/* Packages Sections */
+
+.packages .grid li {
+  padding: 50px;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.packages .grid li i {
+  color: #8c93ff;
+}
+
+.packages .grid h4 {
+  font-size: 30px;
+  margin: 25px 0;
 }
