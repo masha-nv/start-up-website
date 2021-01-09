@@ -77,6 +77,12 @@ section p {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  section {
+    padding: 50px 20px;
+  }
+}
+
 /* HEADER STYLES */
 
 header {
@@ -108,6 +114,17 @@ header nav {
 
 header nav li {
   margin: 0 15px;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h2 {
+    margin-bottom: 15px;
+  }
 }
 
 /* Hero Styles */
@@ -160,6 +177,21 @@ header nav li {
   }
 }
 
+@media (max-width: 800px) {
+  .hero {
+    min-height: 600px;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+  .hero h3 {
+    font-size: 24px;
+  }
+  .hero a.btn {
+    padding: 15px 40px;
+  }
+}
+
 /* Destinations Section */
 
 .destinations .grid li {
@@ -175,6 +207,20 @@ header nav li {
 }
 .destinations .grid li.large {
   flex-basis: 70%;
+}
+
+@media (max-width: 900px) {
+  .destinations .grid li.small,
+  .destinations .grid li.large {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .destinations .grid li.small,
+  .destinations .grid li.large {
+    flex-basis: 100%;
+  }
 }
 
 /* Packages Sections */
@@ -194,6 +240,17 @@ header nav li {
   margin: 25px 0;
 }
 
+@media (max-width: 800px) {
+  .packages .grid li {
+    flex-basis: 100%;
+    padding: 10px;
+  }
+  .packages .grid h4 {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+}
+
 /* Testimonials styles */
 
 .testimonials div {
@@ -209,6 +266,16 @@ header nav li {
 
 .testimonials div cite {
   float: right;
+}
+
+@media (max-width: 800px) {
+  .testimonials div {
+    padding: 13px;
+  }
+  .testimonials div blockquote {
+    padding: 7px;
+    font-size: 15px;
+  }
 }
 
 /* Contact section */
@@ -231,4 +298,30 @@ header nav li {
   font-size: 18px;
   color: #555;
   flex: 1;
+}
+
+@media (max-width: 1000px) {
+  .contact form input {
+    flex-basis: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+/* Footer  */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #607d8b;
+  color: #fff;
+  padding: 20px 0;
+}
+
+@media (max-width: 1100px) {
+  footer {
+    flex-direction: column;
+  }
+  footer p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
